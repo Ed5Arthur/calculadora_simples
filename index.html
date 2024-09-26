@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <div class="calculadora">
+      <input type="text" id="display" disabled />
+      <div class="botoes">
+        <button onclick="adicionarAoDisplay('7')">7</button>
+        <button onclick="adicionarAoDisplay('8')">8</button>
+        <button onclick="adicionarAoDisplay('9')">9</button>
+        <button onclick="definirOperacao('/')">÷</button>
+        <button onclick="adicionarAoDisplay('4')">4</button>
+        <button onclick="adicionarAoDisplay('5')">5</button>
+        <button onclick="adicionarAoDisplay('6')">6</button>
+        <button onclick="definirOperacao('*')">x</button>
+        <button onclick="adicionarAoDisplay('1')">1</button>
+        <button onclick="adicionarAoDisplay('2')">2</button>
+        <button onclick="adicionarAoDisplay('3')">3</button>
+        <button onclick="definirOperacao('-')">-</button>
+        <button onclick="adicionarAoDisplay('0')">0</button>
+        <button onclick="calcularResultado()">=</button>
+        <button onclick="limparDisplay()">C</button>
+        <button onclick="definirOperacao('+')">+</button>
+      </div>
+    </div>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
